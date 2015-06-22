@@ -1,2 +1,120 @@
 /* Bootstrap CSS */
 
+@import url(http://fonts.googleapis.com/css?family=Lato:100,300,400,700,300italic,400italic,700italic);
+
+html {
+	font-family: 'Lato', sans-serif;
+	-ms-text-size-adjust: 100%;
+	-webkit-text-size-adjust: 100%;
+}
+
+body {
+	background-color: #040320;
+	font-family: 'lato';
+}
+
+h1,h2,h3,h4,h5,h6 {
+	font-weight: 100;
+	color: white;
+}
+
+h1 {
+	font-size: 5em;
+	text-transform: uppercase;
+}
+h3 {
+	font-size: 2em;
+}
+
+
+
+
+
+
+
+/*navbar style*/
+
+.navbar-movietime {
+	background-color: #352140;
+}
+
+.navlogo {
+	height: 40px;
+	padding-top: 10px;
+	padding-left: 15px;
+	float: left;
+}
+
+.navtitle {
+	float: left;
+	padding: 15px 15px;
+	font-size: 22px;
+	line-height: 20px;
+	height: 50px;
+	text-transform: uppercase;
+}
+
+.navbar-nav>li>a,  .navbar-nav>li>a:focus{
+	color: white;
+	text-decoration: none;
+}
+
+.navbar-nav>li>a:hover{
+	color: white;
+	text-decoration: none;
+}
+
+.nav>li>a:hover, .nav>li>a:focus{
+	background-color: #271a30;
+}
+
+.nav .open>a, .nav .open>a:hover, .nav .open>a:focus{
+	background-color: #271a30;
+}
+
+.dropdown-menu>li>a:hover, .dropdown-menu>li>a:focus{
+	background-color: #f2f2f2;
+}
+
+
+/*mainbody style*/
+
+a, a:focus, a:hover {
+	color: white;
+	text-decoration: none;
+	font-weight: 100;
+}
+
+.main-nav>li>a:hover {
+	color: white;
+	text-decoration: none;
+	border-bottom: 2px solid #eb4a60;
+}
+
+.header {
+	text-align: center;
+}
+
+.mainlogo {
+	margin-top: 40px;
+	width: 150px;
+}
+
+ul.main-nav {
+	padding: 2em 0;
+	font-size: 1.5em;
+}
+
+li {
+	display: inline;
+	list-style-type: none;
+	padding-right: 20px;
+}
+
+a.active {
+	border-bottom: 2px solid #eb4a60;
+}
+
+section {
+	background-color: #040320;
+}
