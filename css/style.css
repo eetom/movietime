@@ -347,3 +347,11 @@ dd {
 	background-image: url("../image/polarbear_bg.png");
 }
 
+@media (max-width: 993px){
+	.bg1 {
+		height: 800px;
+		padding-top: 0px;
+		background-image: url("../image/polarbear_bg.png");
+	}
+}
+
