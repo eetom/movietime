@@ -64,6 +64,92 @@
     </div>
   </section>
 
+  <section>
+    <div class = "container movielist">
+      <div class = "col-md-10 col-md-offset-1">
+        <h2>Upcoming Movies for July 2015</h2>
+        <hr>
+      </div>
+
+      <div class = "row">
+        <div class = "col-md-10 col-md-offset-1 movieblock">
+          <div class = "col-md-3">
+            <img src="image/manglehorn.jpg" alt="polarbearposter">
+          </div>
+          <div class = "col-md-7">
+            <h3>Manglehorn</h3>
+            <h4>2014 (USA)</h4>
+            <h4>Directed by David Gordon Green</h4>
+            <p>Left heartbroken by the woman he loved and lost many years ago, Manglehorn, an eccentric small-town locksmith, tries to start his life over again with the help of a new friend.</p>
+            <br>
+            <h4>Showing: July 25, 2015 @ 8pm</h4>
+            <!-- Button trigger modal -->
+            <button type="button" class="btn btn-feedback btn-lg" data-toggle="modal" data-target="#myModal">
+              Give Feedback
+            </button>
+            <button type="button" class="btn btn-moreinfo btn-lg">
+              More Info
+            </button>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <section>
+    <div class = "container footer">
+      <hr>
+      <h4>Movie Time</h4>
+    </div>
+  </section>
+
+  <!-- Modal -->
+  <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+    <div class="modal-dialog" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+          <h4 class="modal-title" id="myModalLabel">Give your feedback about this movie</h4>
+        </div>
+        <div class="modal-body">
+          <form>
+            <div class="form-group">
+              <label for="Name">Enter Your Name</label>
+              <input type="email" class="form-control" id="name" placeholder="Name">
+            </div>
+            <div class="form-group">
+              <label for="status">Will you see this movie?</label>
+              <div class="radio">
+                <label>
+                  <input type="radio" name="optionsRadios" id="optionsRadios1" value="option1" checked>
+                  I will go to see this movie
+                </label>
+              </div>
+              <div class="radio">
+                <label>
+                  <input type="radio" name="optionsRadios" id="optionsRadios2" value="option2">
+                  I will not go to see this movie
+                </label>
+              </div>
+            </div>
+
+            <div class="form-group">
+              <label for="feedback">Enter your feedback</label>
+              <textarea class="form-control" rows="3" placeholder="Enter your feedback"></textarea>
+            </div>
+
+          </div>
+        </form>
+
+
+        <div class="modal-footer">
+          <button type="button" class="btn btn-lg btn-default" data-dismiss="modal">Close</button>
+          <button type="button" class="btn btn-lg btn-modal">Submit</button>
+        </div>
+      </div>
+    </div>
+  </div>
 
     <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
