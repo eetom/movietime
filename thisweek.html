@@ -9,6 +9,7 @@
     <!-- Bootstrap -->
     <link href="css/bootstrap.min.css" rel="stylesheet">
     <link href="css/style.css" rel="stylesheet">
+    <link rel="icon" type="image/png" href="image/favicon.png">
 
     <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
     <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
@@ -19,7 +20,7 @@
   </head>
   <body>
 
-  <nav class="navbar navbar-movietime">
+  <nav class="navbar navbar-movietime navbar-fixed-top">
     <div class="container-fluid">
       <!-- Brand and toggle get grouped for better mobile display -->
       <div class="navbar-header">
@@ -64,7 +65,7 @@
     </div>
   </section>
 
-<section>
+<section class = "bg1">
     <div class = "container movielist">
       <div class = "col-md-10 col-md-offset-1">
         <h2>This Week's Movie</h2>
@@ -94,12 +95,85 @@
     </div>
   </section>
 
+  <section id = "movie">
+    <div class = "container movielist">
+      <div class = "col-md-10 col-md-offset-1">
+        <h2>More Info</h2>
+        <hr>
+      </div>
+
+      <div class = "row">
+        <div class = "col-md-10 col-md-offset-1 movieblock">
+          <div class = "col-md-12 movieinfo">
+            <dl>
+               <dt>Directed by</dt><dd>Maya Forbes</dd>
+               <dt>Written by</dt><dd>Maya Forbes</dd>
+               <dt>Starring</dt><dd>Mark Ruffalo, Zoe Saldana, Imogene Wolodarsky</dd>
+               <dt>Genres</dt><dd>Comedy, Drama</dd>
+               <dt>Runtime</dt><dd>90mins</dd>
+               <dt>IMDB Rating</dt><dd>7.1/10 <span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon emptystars glyphicon-star-empty" aria-hidden="true"></span><span class="glyphicon emptystars glyphicon-star-empty" aria-hidden="true"></span><span class="glyphicon emptystars glyphicon-star-empty" aria-hidden="true"></span></dd>
+            </dl>
+          </div>
+
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+
   <section>
     <div class = "container footer">
       <hr>
-      <h4>Movie Time</h4>
+      <h4>Movie Time &copy; 2015</h4>
     </div>
   </section>
+
+  <!-- Modal -->
+  <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+    <div class="modal-dialog" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+          <h4 class="modal-title" id="myModalLabel">Give your feedback about this movie</h4>
+        </div>
+        <div class="modal-body">
+          <form>
+            <div class="form-group">
+              <label for="Name">Enter Your Name</label>
+              <input type="email" class="form-control" id="name" placeholder="Name">
+            </div>
+            <div class="form-group">
+              <label for="status">Will you see this movie?</label>
+              <div class="radio">
+                <label>
+                  <input type="radio" name="optionsRadios" id="optionsRadios1" value="option1" checked>
+                  I will go to see this movie
+                </label>
+              </div>
+              <div class="radio">
+                <label>
+                  <input type="radio" name="optionsRadios" id="optionsRadios2" value="option2">
+                  I will not go to see this movie
+                </label>
+              </div>
+            </div>
+
+            <div class="form-group">
+              <label for="feedback">Enter your feedback</label>
+              <textarea class="form-control" rows="3" placeholder="Enter your feedback"></textarea>
+            </div>
+
+          </div>
+        </form>
+
+        <div class="modal-footer">
+          <button type="button" class="btn btn-lg btn-default" data-dismiss="modal">Close</button>
+          <button type="button" class="btn btn-lg btn-modal">Submit</button>
+        </div>
+      </div>
+    </div>
+  </div>
 
 
     <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->

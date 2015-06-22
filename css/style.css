@@ -11,7 +11,7 @@ html {
 body {
 	background-color: #040320;
 	font-family: 'lato';
-	min-height: 1200px;
+	min-height: 600px;
 }
 
 h1,h2,h3,h4,h5,h6,p {
@@ -44,6 +44,14 @@ h3 {
 	border-radius: .25em;
 	font-weight: 100;
 	margin-left: 10px;
+}
+
+.glyphicon {
+	color: #eb4a60;
+}
+
+.emptystars {
+	color: #999999;
 }
 
 /*navbar style*/
@@ -124,7 +132,7 @@ a, a:focus, a:hover {
 }
 
 .mainlogo {
-	margin-top: 40px;
+	margin-top: 100px;
 	width: 150px;
 }
 
@@ -172,6 +180,7 @@ img.desaturate {
 
 .movieblock {
 	margin-top: 20px;
+	margin-bottom: 20px;
 }
 
 .movielist h2 {
@@ -183,11 +192,14 @@ img.desaturate {
 	margin-top: 0;
 }
 
+.movieinfo h4 {
+	margin: 20px 0;
+}
+
 /*footer section*/
 
 .footer {
 	height: 50px;
-	margin-top: 50px;
 }
 
 .footer>h4 {
@@ -195,6 +207,24 @@ img.desaturate {
 }
 
 /*button section*/
+
+.btn-over {
+	color: #fff;
+	background-color: #666666;
+	border-color: #666666;
+	pointer-events: none;
+	margin-top: 10px;
+	margin-right: 5px;
+}
+
+.btn-over:hover, .btn-over:focus, .btn-over:active, .btn-over.active, .open>.dropdown-toggle.btn-over{
+	color: #fff;
+	background-color: #666666;
+	border-color: #666666;
+	pointer-events: none;
+	margin-top: 10px;
+	margin-right: 5px;
+}
 
 .btn-feedback {
 	color: #fff;
@@ -287,4 +317,33 @@ img.desaturate {
 	border-color: #271a30;
 }
 
+dl {
+	color: #fff;
+	font-weight: 100;
+	font-size: 1.3em;
+}
+
+dt { 
+	display:block; 
+	float:left; 
+	font-weight: 100;
+	width:150px; 
+	padding: 10px 5px;
+	text-align: right;
+}
+
+dt:after{
+	content:' :';
+}
+
+dd { 
+	display:block;
+	padding: 10px 0px;
+}
+
+.bg1 {
+	height: 600px;
+	padding-top: 75px;
+	background-image: url("../image/polarbear_bg.png");
+}
 

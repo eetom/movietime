@@ -9,6 +9,7 @@
     <!-- Bootstrap -->
     <link href="css/bootstrap.min.css" rel="stylesheet">
     <link href="css/style.css" rel="stylesheet">
+    <link rel="icon" type="image/png" href="image/favicon.png">
 
     <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
     <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
@@ -19,7 +20,7 @@
   </head>
   <body>
 
-  <nav class="navbar navbar-movietime">
+  <nav class="navbar navbar-movietime navbar-fixed-top">
     <div class="container-fluid">
       <!-- Brand and toggle get grouped for better mobile display -->
       <div class="navbar-header">
@@ -78,12 +79,15 @@
             <img src="image/insideout.jpg" class = "desaturate" alt="insideoutposter">
           </div>
           <div class = "col-md-7">
-            <h3>Inside out<span class="label label-default">Screening Over</span></h3>
+            <h3>Inside out</h3>
             <h4>2015 (USA)</h4>
             <h4>Directed by Pete Docter, Ronaldo Del Carmen</h4>
             <p>After young Riley is uprooted from her Midwest life and moved to San Francisco, her emotions - Joy, Fear, Anger, Disgust and Sadness - conflict on how best to navigate a new city, house and school.</p>
             <br>
             <h4>Showing: July 4, 2015 @ 8pm</h4>
+            <button type="button" class="btn btn-over btn-lg">
+              Screening Over
+            </button>
           </div>
         </div>
       </div>
@@ -94,12 +98,15 @@
             <img src="image/dope.jpg" class = "desaturate" alt="dopeposter">
           </div>
           <div class = "col-md-7">
-            <h3>Dope<span class="label label-default">Screening Over</span></h3>
+            <h3>Dope</h3>
             <h4>2015 (USA)</h4>
             <h4>Directed by Rick Famuyiwa</h4>
             <p>Life changes for Malcolm, a geek who's surviving life in a tough neighborhood, after a chance invitation to an underground party leads him and his friends into a Los Angeles adventure.</p>
             <br>
             <h4>Showing: July 11, 2015 @ 8pm</h4>
+            <button type="button" class="btn btn-over btn-lg">
+              Screening Over
+            </button>
           </div>
         </div>
       </div>
@@ -120,7 +127,7 @@
             <button type="button" class="btn btn-feedback btn-lg" data-toggle="modal" data-target="#myModal">
               Give Feedback
             </button>
-            <button type="button" class="btn btn-moreinfo btn-lg">
+            <button type="button" class="btn btn-moreinfo btn-lg" onClick="parent.location='thisweek.html#movie'">
               More Info
             </button>
           </div>
@@ -157,7 +164,7 @@
   <section>
     <div class = "container footer">
       <hr>
-      <h4>Movie Time (c) 2015</h4>
+      <h4>Movie Time &copy; 2015</h4>
     </div>
   </section>
 
